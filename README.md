@@ -2,6 +2,11 @@
 
 This is the Plan B version of the Turf application, built with Next.js and Supabase.
 
+## Repository Information
+- Local Directory: `/Users/marceloranieri/Desktop/turf-plan-b`
+- GitHub Repository: `https://github.com/marceloranieri/turf-plan-b`
+- Last Verified: $(date)
+
 ## Getting Started
 
 First, run the development server:

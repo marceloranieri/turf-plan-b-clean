@@ -1,4 +1,6 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Turf Plan B
+
+This is the Plan B version of the Turf application, built with Next.js and Supabase.
 
 ## Getting Started
 
@@ -8,29 +10,35 @@ First, run the development server:
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Features
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- Uses the same Supabase backend as the main Turf app
+- Modern UI with Next.js and TypeScript
+- Authentication and user management
+- Real-time features
+- Responsive design
 
-## Learn More
+## Environment Setup
 
-To learn more about Next.js, take a look at the following resources:
+Create a `.env.local` file with the following variables:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```env
+# Application URLs
+NEXT_PUBLIC_SITE_URL=your_site_url
+NEXT_PUBLIC_API_URL=your_api_url
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+# Supabase Configuration
+NEXT_PUBLIC_SUPABASE_URL=your_supabase_url
+NEXT_PUBLIC_SUPABASE_ANON_KEY=your_anon_key
+
+# Feature Flags
+NEXT_PUBLIC_ENABLE_SOCIAL_LOGIN=true
+```
 
 ## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+The app is configured for deployment on Vercel. Check out the [deployment documentation](https://nextjs.org/docs/deployment) for more details.
